@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-void text-white font-roboto;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-space-gray/30 backdrop-blur-sm border border-neon-blue/20 rounded-lg;
+  }
+  
+  .neon-border {
+    @apply border border-neon-blue shadow-[0_0_10px_#00f3ff];
+  }
+  
+  .btn-primary {
+    @apply px-6 py-2 bg-electric-purple/20 hover:bg-electric-purple/30 
+           border border-electric-purple rounded-md transition-all duration-300
+           font-orbitron text-white hover:shadow-[0_0_15px_#9945FF];
+  }
+  
+  .nav-link {
+    @apply relative text-white hover:text-neon-blue transition-colors duration-300
+           after:content-[''] after:absolute after:bottom-0 after:left-0 
+           after:w-0 after:h-[2px] after:bg-neon-blue 
+           after:transition-all after:duration-300
+           hover:after:w-full;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.electric-purple') theme('colors.space-gray');
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-space-gray/30 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-electric-purple/50 rounded-full hover:bg-electric-purple/70 transition-colors;
+  }
+}
+
+.glassmorphism {
+  background: rgba(26, 26, 46, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

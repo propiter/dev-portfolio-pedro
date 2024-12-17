@@ -1,0 +1,67 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "Portfolio Website",
+            "description": "A modern portfolio website built with React and Tailwind CSS, featuring a clean design and smooth animations.",
+            "technologies": [
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+            "deployUrl": "https://portfolio.example.com",
+            "frontendUrl": "https://github.com/example/portfolio",
+            "isFeatured": true,
+            "createdAt": "2024-03-15T00:00:00Z"
+        },
+        {
+            "id": "2",
+            "title": "Task Management App",
+            "description": "A comprehensive task management application with real-time updates and collaborative features.",
+            "technologies": [
+                "React",
+                "Redux",
+                "Node.js",
+                "MongoDB"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
+            "deployUrl": "https://tasks.example.com",
+            "frontendUrl": "https://github.com/example/task-app",
+            "backendUrl": "https://github.com/example/task-api",
+            "isFeatured": true,
+            "createdAt": "2024-03-10T00:00:00Z"
+        }
+    ],
+    "guestbook": [
+        {
+            "id": "1",
+            "name": "John Doe",
+            "company": "Tech Corp",
+            "websiteUrl": "https://techcorp.com",
+            "message": "Amazing portfolio! Love the clean design and smooth animations.",
+            "createdAt": "2024-03-15T10:30:00Z"
+        },
+        {
+            "id": "2",
+            "name": "Jane Smith",
+            "company": "Design Studio",
+            "websiteUrl": "https://designstudio.com",
+            "message": "Great work showcasing your projects. The layout is very intuitive!",
+            "createdAt": "2024-03-14T15:45:00Z"
+        },
+        {
+            "id": "3",
+            "name": "Piter",
+            "company": "Aadso",
+            "websiteUrl": "https://designstudio.com",
+            "message": "Great work showcasing your projects. The layout is very intuitive!",
+            "createdAt": "2024-03-14T15:45:00Z"
+        }
+    ],
+    "auth": {
+        "username": "admin",
+        "password": "$2a$10$8KzaNdKIMyOkASCH4QvSB.kKgJuPNY7DXkNTYmjKrM7cFY0Cj.ZFy"
+    }
+}
